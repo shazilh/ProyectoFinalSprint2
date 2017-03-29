@@ -9,12 +9,21 @@ function agregarNombrePendiente(){
     pendientes.innerHTML=nombrePendiente==''?'(nada)':nombrePendiente;
     document.getElementById("visualizarPendiente").appendChild(pendientes);
     pendientes.style.fontWeight = "900";
+    pendientes.style.fontSize="48px";
 
     document.getElementById("nombrePendiente").value = "";
     document.getElementById("preview").innerText="";
 
-    visualizar.insertBefore("nuevoNodo,visualizar.firstChild");
+    visualizarPendiente.insertBefore("nuevoNodo,visualizarPendiente.firstChild");
 
+}
+function agregarALista(){
+  var nuevoPendiente=document.getElementById("nuevoPendienteAgregarALista");
+  var texto=document.getElementById("lista");
+  var li=document.createElement("LI");
+  li.innerHTML=texto==''?'(nada)':texto;//Este texto va a ser un nuevo elemento
+  document.getElementById("lista").appendChild(li);//Ese nuevo elemento metelo como hijo a mi lista
+  document.getElementById("liname").value = nuevoPendiente;
 }
 
 function mostrar(){

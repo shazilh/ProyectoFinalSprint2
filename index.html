@@ -8,12 +8,16 @@
     <article id="contenedorPendientes">
     <hr>
     <section id="visualizarPendiente"></section>
+  </ol id="lista"></ol>
+  <h5>Agregar Pendiente</h5>
+  <input type="text" id="nuevoPendienteAgregarALista" onclick="agregarALista()">
+  <input type=button  id="crearPendiente" value="Crear Pendiente" onclick="agregarALista()"></button>
     <hr>
     </article>
 
     <h3><strong>Agregar Lista</strong></h3>
     <input type=text id="nombrePendiente" oninput="mostrar()" >
-    <input type=button  id="crearPendiente" value="Crear Lista" onclick="agregarNombrePendiente()"></button>
+    <input type=button  id="crearListaPendiente" value="Crear Lista" onclick="agregarNombrePendiente()"></button>
 
     <section id="preview"></section>
 

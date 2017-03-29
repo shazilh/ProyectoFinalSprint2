@@ -5,14 +5,18 @@
     <title>TRELLO LABORATORIA</title>
   </head>
   <body>
-
     <article id="contenedorPendientes">
-    <section id="visualizarPendiente"></section>
-    </article>
     <hr>
+    <section id="visualizarPendiente"></section>
+    <hr>
+    </article>
+
     <h3><strong>Agregar Lista</strong></h3>
-    <input type=text id="nombrePendiente">
-    <input type=button  id="crearLista" value="Crear Lista" onclick="agregarNombrePendiente()"></button>
+    <input type=text id="nombrePendiente" oninput="mostrar()" >
+    <input type=button  id="crearPendiente" value="Crear Lista" onclick="agregarNombrePendiente()"></button>
+
+    <section id="preview"></section>
+
 
   <script src="trello.js"></script>
   </body>
